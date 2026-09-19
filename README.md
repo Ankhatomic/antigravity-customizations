@@ -9,6 +9,7 @@ A curated collection of skills, prompts, and customizations for [Google Antigrav
 | Skill | Description |
 |:---|:---|
 | [`github-customizations-publisher`](./skills/github-customizations-publisher) | Publish, version, and sync Antigravity customizations (skills, prompts, rules, and workflows) to GitHub repositories so other users can disc... |
+| [`grill-with-docs`](./skills/grill-with-docs) | Conduct a rigorous, structured design interview to stress-test ideas and architectural plans, automatically documenting settled decisions in... |
 | [`skill-creator`](./skills/skill-creator) | Create new skills, modify and improve existing skills, and measure skill performance within the Antigravity IDE ecosystem. Activate this ski... |
 
 ## 🛠️ How to Install
