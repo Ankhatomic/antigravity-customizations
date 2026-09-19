@@ -136,6 +136,19 @@ def update_root_readme(dest_repo: Path):
             content.append(f"| [`{name}`](./skills/{name}) | {short_desc} |")
         content.append("")
 
+    # Detect remote origin url if available
+    repo_url = "https://github.com/<username>/antigravity-customizations.git"
+    try:
+        import subprocess
+        res = subprocess.run(["git", "-C", str(dest_repo), "config", "--get", "remote.origin.url"], capture_output=True, text=True)
+        if res.returncode == 0 and res.stdout.strip():
+            detected = res.stdout.strip()
+            # Clean if contains token
+            clean_url = re.sub(r'https://[^@]+@github\.com/', 'https://github.com/', detected)
+            repo_url = clean_url
+    except Exception:
+        pass
+
     content.extend([
         "## 🛠️ How to Install",
         "",
@@ -143,7 +156,7 @@ def update_root_readme(dest_repo: Path):
         "Copy the desired skill into your global Antigravity configuration:",
         "```bash",
         "# Clone this repository",
-        "git clone https://github.com/<username>/antigravity-customizations.git /tmp/antigravity-customizations",
+        f"git clone {repo_url} /tmp/antigravity-customizations",
         "",
         "# Install a specific skill (example: skill-creator)",
         "mkdir -p ~/.gemini/config/skills",
