@@ -17,7 +17,7 @@ A curated collection of skills, prompts, and customizations for [Google Antigrav
 Copy the desired skill into your global Antigravity configuration:
 ```bash
 # Clone this repository
-git clone https://github.com/<username>/antigravity-customizations.git /tmp/antigravity-customizations
+git clone https://github.com/Ankhatomic/antigravity-customizations.git /tmp/antigravity-customizations
 
 # Install a specific skill (example: skill-creator)
 mkdir -p ~/.gemini/config/skills
