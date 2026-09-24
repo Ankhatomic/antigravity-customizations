@@ -11,6 +11,7 @@ A curated collection of skills, prompts, and customizations for [Google Antigrav
 | [`deskcomm-deployer`](./skills/deskcomm-deployer) | Instala o DeskcommCRM do zero em uma VPS de cliente novo, do clone do repositório até o CRM no ar com WhatsApp conectado. Ideal para quem revende o DeskcommCRM e precisa automatizar o onboarding de novos clientes. |
 | [`github-customizations-publisher`](./skills/github-customizations-publisher) | Publish, version, and sync Antigravity customizations (skills, prompts, rules, and workflows) to GitHub repositories so other users can discover and install them. |
 | [`grill-with-docs`](./skills/grill-with-docs) | Conduct a rigorous, structured design interview to stress-test ideas and architectural plans, automatically documenting settled decisions into persistent project records (ADRs or DECISOES.md). |
+| [`prompt-engineer`](./skills/prompt-engineer) | Especialista em engenharia e arquitetura de prompts segundo as práticas de 2026, com foco em Context Engineering, gestão de tokens e design de sistemas cognitivos. |
 | [`skill-creator`](./skills/skill-creator) | Create new skills, modify and improve existing skills, and measure skill performance within the Antigravity IDE ecosystem. |
 
 ---
@@ -23,7 +24,7 @@ Copy the desired skill into your global Antigravity configuration:
 # Clone this repository
 git clone https://github.com/Ankhatomic/antigravity-customizations.git /tmp/antigravity-customizations
 
-# Install a specific skill (example: deskcomm-deployer)
+# Install a specific skill (example: prompt-engineer)
 mkdir -p ~/.gemini/config/skills
 cp -r /tmp/antigravity-customizations/skills/<skill-name> ~/.gemini/config/skills/
 ```
